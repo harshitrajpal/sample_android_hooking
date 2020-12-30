@@ -60,5 +60,14 @@
             android:layout_marginLeft="110dp"
             android:layout_marginTop="200dp"
             android:text="ADD" />
+        
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="400dp"
+            android:text="EXIT"
+            tools:ignore="DuplicateIds" />
 
     </RelativeLayout>

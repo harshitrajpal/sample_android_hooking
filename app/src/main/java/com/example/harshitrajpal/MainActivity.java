@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button add_button;
+    Button exit_button;
     TextView a,b,sum;
     double add=0;
     @Override
@@ -22,10 +23,17 @@ public class MainActivity extends AppCompatActivity {
         b=(TextView)findViewById(R.id.num2);
         add_button=(Button) findViewById(R.id.add_button);
         sum=(TextView)findViewById(R.id.sum);
-
+        exit_button = (Button) findViewById(R.id.exit_button);
+        
         add_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 sum.setText(Double.toString(returnValue()));
+            }
+        });
+        
+        exit_button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                System.exit(2);
             }
         });
     }
